@@ -1,6 +1,6 @@
-# SAURIA-CHESHIRE integration demonstrator
+# PCA integration demonstrator
 
-This repository contains a demonstration of the integration of the SAURIA convolutional accelerator and CHESHIRE MCU. The project includes source code, hardware design files, and supporting scripts for simulation and FPGA deployment.
+This repository contains the Parallel Computing Accelerator (PCA) developed in the ISOLDE project to calculate convolutions with AxC. The project includes source code, hardware design files, and supporting scripts for simulation and FPGA deployment.
 
 ## Project Structure
 
@@ -45,14 +45,10 @@ This repository contains a demonstration of the integration of the SAURIA convol
    make sw
    ```
 
-4. Simulate SAURIA-CHESIRE demo, in two ways:
+4. Simulate PCA demo, in two ways:
   - Using ```make sim-gui BIN_SEL=$BIN_SEL```, with $BIN_SEL equal to _0_ for the _Hello world_ example, _1_ for a _register & SRAM_ write & read test, _2_ for a complete _single convolutional layer_ test [WORK IN PROGRESS]
   - Sourcing *start.sauria_demo.tcl* using QuestaSim opened in target/sim/vsim, and setting the BIN_SEL before calling the tcl script
 
 ## License
 
 This project is licensed under the terms specified in the repository. Please refer to the license file for details.
-
-## Acknowledgments
-
-This project has been developed as part of the project NODES which has received funding from the MI_JQ—M4C215 of PNRR funded by the European Union - NextGenerationEU (Grant agreement no. ECSOOOOOOB6)
